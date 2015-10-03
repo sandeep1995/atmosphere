@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--	
+	Best Viewed in the Latest Chrome Browser ( I am developing on the Chrome Version 45.0.2454.101)
+----	Made for -> http://www.mywbut.com -> EXORSA v3.0 -> WWWIZARD - Web Design Contest-> Problem Statement 2 - Website for Hotel
+----	Date: 01/10/2015 Thursday
+----	Participant: Sandeep Acharya (Registration ID - EXS550204) Heritage Institute of Technology, Kolkata
+----	Pictures I have taken from -> https://unsplash.com and https://pixabay.com
+----	Thanks
+-
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Sandeep Acharya">
+    <title>Hotel Atmosphere | Your Destination for Awesomeness</title>
+    <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABNUlEQVQ4T52Tv0rDUBSHv4uiiEvfIBUHce4TVIuIuPUBVHD1EdzFoYOzoo/gIIKLdhIXQdBBcNA7OBVsbdFEK71yT0jSJLetNZA/JPm+nHPzO4oR28vxnMm+Utx6VtG9+MLlsbC3cQDKB6K9iz6pEUkGCkJ4Dxqv0PNpPd1QmF8A48M06LNzkTgFAm/uw2cT2g30xREYA0rhLZehF6Avr92CLMyMQp8ehgLAW6/ARxN9dZsX5GBb7uwkVtJ6uKOwWBSYzhu6fp8WOGEThD1PGSkb8wVBB+ii64+JIF4w/116FiiC7TmCzXcKti0pgau7MPEzNpwI1nbkV43z5ThIUsHq9r9gqcAeRLJSTSRDes4mNg6SSCpLQxfMFfdUEkVSLoFjtQfNXC7K/dPXP3V/Fowa7+zzX9BT/xFZrZR6AAAAAElFTkSuQmCC" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+ <div class="modal" id="modal-one" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h2>Reserve a Room</h2>
+      <a href="#close" class="btn-close" aria-hidden="true">×</a>
+    </div>
+    <div class="modal-body">
+	Name
+    <input type="text" class="input-spl" placeholder="Name">
+	Phone no
+    <input type="number" class="input-spl" placeholder="Phone number">
+	Check in Date and Timings
+	<input type="datetime-local" class="input-spl" placeholder="Choose date and time">
+	<h3>Room type</h3>
+	<select class="input-spl">
+		<option disabled>Choose one package</option>
+		<option value="1">Delux</option>
+		<option value="1">Diamond</option>
+		<option value="1">Economy</option>
+	</select>
+    </div>
+    <div class="modal-footer">
+      <a href="#close" class="btn">Close</a>
+      <a class="button button-green">Submit</a>
+    </div>
+    </div>
+  </div>
+	
+<section id="welcomeBanner">
+  <div class="container">
+	<center>
+		<h1 id="hotel">Atmosphere</h1>
+		<h3 id="caption">Best Place for your Rest at <b>kolkata</b></h3>
+		<div class="btn-group">
+		<a href="#" class="btn-trans" onclick="return false;" onmousedown="autoScrollTo('section1');">Services</a>
+		<a href="#" class="btn-trans" onclick="return false;" onmousedown="autoScrollTo('section4');">Price Listings</a>
+		<a href="#" class="btn-trans" onclick="return false;" onmousedown="autoScrollTo('section3');">Contact Info</a>
+		<a class="btn-trans" id="open-modal" href="#modal-one">Book Now</a>
+		</div>
+	</center>
+  </div>
+</section>
+<section >
+  <div id="section1" class="tabs">
+	<div class="container">
+		<center><h1>WHAT WE HAVE FOR YOU</h1></center>
+	</div>
+				<nav>
+					<ul>
+						<li><a href="#section-1" class="icon-shop"><span>Rooms</span></a></li>
+						<li><a href="#section-2" class="icon-cup"><span>Services</span></a></li>
+						<li><a href="#section-3" class="icon-food"><span>Food</span></a></li>
+						<li><a href="#section-4" class="icon-lab"><span>History</span></a></li>
+					</ul>
+				</nav>
+				<div class="content">
+					<section id="section-1">
+						<div class="mediabox">
+							<img src="img/room-min.jpg" alt="img01" />
+							<h3>Luxury Bed Room</h3>
+							<p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame.</p>
+							<button class="button button-blue">View</button>
+						</div>
+						<div class="mediabox">
+							<img src="img/room1-min.jpg" alt="img02" />
+							<h3>Beautiful Tall Home</h3>
+							<p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin seakale pumpkin onion chickpea gram corn pea.</p>
+							<button class="button button-purple">View</button>
+						</div>
+						<div class="mediabox">
+							<img src="img/room2-min.jpg" alt="img03" />
+							<h3>Excellent Room Service</h3>
+							<p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+							<button class="button button-gray">View</button>
+						</div>
+					</section>
+					<section id="section-2">
+						<div class="mediabox">
+							<img src="img/room6-min.jpg" alt="img04" />
+							<h3>Free WiFi</h3>
+							<p>Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. </p>
+							<button class="button button-orange">Explore</button>
+						</div>
+						<div class="mediabox">
+							<img src="img/room4-min.jpg" alt="img05" />
+							<h3>Indoor Swimming Pool</h3>
+							<p>Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+						<button class="button button-darkblue">Explore</button>
+						</div>
+						<div class="mediabox">
+							<img src="img/room5-min.jpg" alt="img06" />
+							<h3>Indoor Games</h3>
+							<p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. </p>
+						<button class="button button-pink">Explore</button>
+						</div>
+					</section>
+					<section id="section-3">
+							<div class="mediabox">
+							<img src="img/room8-min.jpg" alt="South Indian" />
+							<h3>South Indian</h3>
+							<p>Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. </p>
+							<button class="button button-blue">View</button>
+						</div>
+						<div class="mediabox">
+							<img src="img/room9-min.jpg" alt="img05" />
+							<h3>Bengali</h3>
+							<p>Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+							<button class="button button-gray">View</button>
+						</div>
+						<div class="mediabox">
+							<img src="img/room10-min.jpeg" alt="img06" />
+							<h3>Rajasthani Thali</h3>
+							<p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. </p>
+						<button class="button button-purple">View</button>
+						</div>
+					</section>
+					<section id="section-4">
+						<div class="mediabox" style="width: 96%;">
+							<center><h3>HOTEL ATMOSPHERE</h3></center>
+								<p style="color: #444">
+									Catsear cauliflower garbanzo yarrow salsify chicory  garlic 1965 bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.
+									Catsear cauliflower garbanzo yarrow salsify chicory 24 December garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.
+									Catsear cauliflower garbanzo yarrow cauliflower garbanzo yarrow salsify chicory 24 December garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.
+									Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.
+								</p>
+						</div>
+					</section>
+				</div><!-- /content -->
+			</div><!-- /tabs -->
+</section>
+<section id="section2" class="module sandeepBackGround sandeepBackGround-1">
+  <div class="container">
+    <h1>Stay like a King</h1>
+	<a href="#" class="btn-trans" onclick="return false;" onmousedown="autoScrollTo('section3');">Go Down</a>
+
+  </div>
+</section>
+
+
+
+<section id="section4" class="module content">
+  <div class="container">
+	<div class="mediabox">
+		<center>
+			<h1 style="background: #1aaa6c; color: #ffffff; padding: 30px;"> <i class="fa fa-cart-plus"></i>  Economy<br>
+			Rs. 2999/day
+			</h1>
+			<h3> <i class="fa fa-heart-o"></i> Facility service 1</h3>
+			<h3> <i class="fa fa-home"></i> Facility service 2</h3>
+			<h3> <i class="fa fa-soccer-ball-o"></i> Facility service 3</h3>
+			<h3> <i class="fa fa-cloud"></i> Facility service 4</h3>
+		</center>	
+		</div>
+	
+	<div class="mediabox">
+		<center>
+				<h1 style="background: #128ab1; color: #ffffff; padding: 30px;"> <i class="fa fa-star"></i>  Delux<br>
+			Rs. 9999/day
+			</h1>
+			<h3> <i class="fa fa-hotel"></i> Facility demo 1</h3>
+			<h3> <i class="fa fa-industry"></i> Facility demo 2</h3>
+			<h3> <i class="fa fa-wifi"></i> Facility demo 3</h3>
+			<h3> <i class="fa fa-magnet"></i> Facility demo 4</h3>
+		</center>
+		</div>
+	
+	<div class="mediabox">
+		<center>
+			<h1 style="background: #bc4367; color: #ffffff; padding: 30px;"> <i class="fa fa-diamond"></i>  Diamond<br>
+			Rs. 4999/day
+			</h1>
+			<h3> <i class="fa fa-smile-o"></i> Facility special 1</h3>
+			<h3> <i class="fa fa-file-o"></i> Facility special 2</h3>
+			<h3> <i class="fa fa-truck"></i> Facility special 3</h3>
+			<h3> <i class="fa fa-gamepad"></i> Facility special 4</h3>
+		</center>
+		</div>
+  </div>
+</section>
+
+
+
+
+
+
+<section  class="module sandeepBackGround sandeepBackGround-2">
+  <div class="container">
+    <h1>Feel Awesomeness</h1>
+		<a class="btn-trans" id="open-modal" href="#modal-one">Reserve</a>
+  </div>
+</section>
+
+<section  id="section3"  class="module content">
+  <div class="container">
+    <div class="content">
+		<div class="mediabox">
+			<h2><i class="fa fa-map-marker fa-lg"></i> Address</h2>
+			<h3>We are located at</h3>
+			<p style="color: #444">
+			Subhas Chandra Bose Road<br>
+			Block - D<br>
+			Road No - 10<br>
+			Building No - 328<br>
+			Near Das Pool
+			Kolkata- 700150
+			</p>
+			
+		</div>
+		<div class="mediabox">
+			<h1><i class="fa fa-phone fa-lg"></i> Call us on</h1>
+				<h3>Feel free to contact us for any query or booking</h3>
+				<p style="color: #444">
+				<i class="fa fa-mobile"></i> +91 9679343518<br>
+				<i class="fa fa-mobile"></i> +91 9333666541<br>
+			</p>
+		</div>
+		<div class="mediabox">
+			<img src="img/manager-min.jpg">
+			<h3>Message from Manager</h3>
+			<p>Demo demo founder welcome message.Celery quandong swiss chard chicory earthnut pea potato.</p>
+		</div>
+	</div>
+  </div>
+</section>
+
+<section class="module sandeepBackGround sandeepBackGround-3">
+  <div class="container">
+    <h1>visit atmosphere</h1>
+		<a class="btn-trans" id="open-modal" href="#modal-one">Book Now</a>
+  </div>
+</section>
+
+<section style="background: #eee;" class="module content">
+  <div class="container">
+	<div class="mediabox" style="width:96%">
+		  <center>
+		<h2>Thank you..</h2>
+		<p>Hoping that you will give opportunity to serve for you.</p>
+		<h3>HOTEL ATMOSPHERE</h3>
+	</center> 
+	</div>
+</div>
+</section>
+ <center>
+	 <footer>
+		<p>
+	<a href="#" class="button button-blue" onclick="return false;" style="float: right;" onmousedown="resetScroller('welcomeBanner');">Back to top &uarr;</a>
+	<a href="https://www.quora.com/Sandeep-Acharya-19" target="_blank" class="button button-purple">Developed by Sandeep Acharya</a>
+		</p>
+	  </footer>
+  </center>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
